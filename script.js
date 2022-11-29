@@ -5,7 +5,7 @@ var capLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M
 var specialChars = ["!", "@", "#", "$", "%", "^", "&", "*", "=", "-", "_"];
 
 function generatePassword() {
-  // var userChoosePasswordLength = 
+  var userChoosePasswordLength = prompt("Choose the desired length of your password between 8-128 characters.")
   var userChoseNumbers = confirm("Select 'OK' if you would you like to include numbers in your password. If not, select 'Cancel'.");
   var userChoseLowLetters = confirm("Select 'OK' if you would you like to include lowercase letters in your password. If not, select 'Cancel'.");
   var userChoseCapLetters = confirm("Select 'OK' if you would you like to include uppercase letters in your password. If not, select 'Cancel'.");
@@ -13,6 +13,11 @@ function generatePassword() {
   var availableChars = [];
   var passwordArr = [];
 
+
+  if (userChoosePasswordLength < 8 || userChoosePasswordLength > 128) {
+    
+  }
+  
   if (userChoseNumbers) {
     availableChars = availableChars.concat(numbers);
   }
@@ -27,7 +32,7 @@ function generatePassword() {
   }
 
 
-    for (var i = 0; i < 25; i++) {
+    for (var i = 0; i < userChoosePasswordLength; i++) {
       var randomNum = Math.floor(Math.random() * availableChars.length);
       var randomChar = availableChars[randomNum];
       passwordArr.push(randomChar);

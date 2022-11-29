@@ -17,17 +17,12 @@ body {
   background-color: #f9fbfd;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 header {
   text-align: center;
-  padding: 20px;
-  padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  font-size: larger;
+  padding: 15px;
+   color: hsl(0, 0%, 0%);
 }
 
 .card {
@@ -104,10 +99,8 @@ button[disabled] {
   border: none;
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 85px;
+  padding: 15px;
+  padding-top: 35px;
   font-size: 1.2rem;
   text-align: center;
   margin-top: 10px;
@@ -134,4 +127,8 @@ button[disabled] {
   .btn {
     font-size: 0.8rem;
   }
+}
+
+footer {
+  text-align: right;
 }
