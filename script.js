@@ -48,7 +48,7 @@ else {
     alert("You chose to NOT include special characters in your password.");
   }
 
-  if (userChoseCapLetters == false, userChoseLowLetters == false, userChoseNumbers == false, userChoseSpecialChars == false) {
+  if (userChoseCapLetters == false && userChoseLowLetters == false &&userChoseNumbers == false && userChoseSpecialChars == false) {
     alert("You did not choose 'OK' for any of the password criteria. No password will be generated. After clicking 'OK' please click 'Generate Password' to start the process again.")
   }
 
