@@ -10,7 +10,7 @@ function generatePassword() {
   var userChoosePasswordLength = prompt ("Please choose the desired length of your password (this must be between 8-128 characters).")
 
   if (userChoosePasswordLength < 8 || userChoosePasswordLength > 128) {
-    var userChoosePasswordLength2 = prompt ("You chose " + userChoosePasswordLength + " characters for your password. This is not acceptable criteria for this number generator. Please choose a password length between 8-128 characters.");
+    var userChoosePasswordLength = prompt ("ALERT! You chose " + userChoosePasswordLength + " characters for your password. This is NOT acceptable criteria for this number generator. PLEASE CHOOSE A PASSWORD BETWEEN 8-128 CHARACTERS.");
   }
 
   var userChoseNumbers = confirm("Select 'OK' if you would you like to include numbers in your password. If not, select 'Cancel'.");
